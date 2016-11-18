@@ -100,7 +100,6 @@ if __name__ == "__main__":
         tweet = ("The current temperature is {:.0f}°F, "
                  ", with {:.0f}% of precipitation. Have a great evening!".
                  format(
-                     currently,
                      temperature,
                      (precipProb * 100)))
         api.update_stat(tweet)
