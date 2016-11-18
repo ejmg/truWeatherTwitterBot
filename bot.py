@@ -8,6 +8,7 @@ version 17.11.16
 """
 
 import tweepy as ty
+import random
 import arrow
 import json
 import requests
@@ -61,6 +62,7 @@ def getWeeklyReport(weather):
 if __name__ == "__main__":
     time = arrow.now("US/Central").format("HH:mm")
     api = setTwitterAuth()
+    test = True  # boolean for testing
 
     try:
         weather = requests.get(darkSkyURL)
@@ -104,7 +106,7 @@ if __name__ == "__main__":
                      (precipProb * 100)))
         api.update_stat(tweet)
 
-    elif time[:2] == "22":
+    elif time[:2] == "21":
         tomorrow, low, high, precipProb = getNextDayWeather(weather)
         tweet = ("Good evening, Bulldogs! Here is tomorrow's report: "
                  "{}...".format(tomorrow))
@@ -113,3 +115,8 @@ if __name__ == "__main__":
                  " with a {:.0f}% of precipitation. Try to get some sleep!".
                  format(high, low, precipProb * 100))
         api.update_status(tweet)
+
+    elif test:
+        api.update_status("This is a test tweet for debugging Chron!"
+                          " It worked, @EliasJMGarcia! Random #{}".
+                          format(random.randint(0, 1000)))
