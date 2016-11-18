@@ -4,7 +4,7 @@ This is a weather bot that is set to tweet about weather along with some other t
 
 # As of Now:
 
-the bot currently runs on a chron job on my raspberry pi server and is set to check five past the hour, every hour, of every day. There are currently four tweets that aretriggered by a specific time of every day:
+the bot currently runs on a chron job on my raspberry pi server and is set to check five past the hour, every hour, of every day. There are currently four tweets that are triggered by a specific time of every day:
 
 1. 6AM: the bot gives the weather report for the day (summary, temp, precip)
 2. 12PM: it will give the 7 day forecast (Summary only)
