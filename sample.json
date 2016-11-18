@@ -1,0 +1,113 @@
+{'longitude': -92.5819, 'latitude': 40.1876, 'currently':
+ {
+     'summary': 'Clear',
+     'precipIntensity': 0, 'nearestStormBearing': 252, 'cloudCover': 0.22,
+     'visibility': 10, 'time': 1479416836, 'dewPoint': 47.35, 'pressure': 1003.18,
+     'ozone': 235.9, 'icon': 'clear-day', 'windBearing': 194, 'temperature': 73.78,
+     'windSpeed': 19.61, 'precipProbability': 0, 'nearestStormDistance': 165,
+     'apparentTemperature': 73.78, 'humidity': 0.39
+ },
+ 'daily':
+ {
+     'summary': 'Light rain on Tuesday and Wednesday, with temperatures falling to 47°F on Saturday.',
+     'icon': 'rain', 'data': [
+         {
+             'summary': 'Mostly cloudy starting in the afternoon.',
+             'apparentTemperatureMax': 73.91, 'time': 1479362400, 'dewPoint': 46.51,
+             'pressure': 1004.84, 'cloudCover': 0.31, 'temperatureMax': 73.91,
+             'temperatureMin': 54.56, 'sunsetTime': 1479423207, 'apparentTemperatureMin':
+             54.56, 'apparentTemperatureMaxTime': 1479416400, 'moonPhase': 0.62,
+             'precipIntensity': 0, 'windSpeed': 15.17, 'sunriseTime': 1479387616, 'ozone':
+             236.57, 'icon': 'partly-cloudy-night', 'windBearing': 187, 'visibility': 10,
+             'precipProbability': 0, 'temperatureMinTime': 1479362400,
+             'apparentTemperatureMinTime': 1479362400, 'temperatureMaxTime': 1479416400,
+             'precipIntensityMax': 0, 'humidity': 0.54
+         },
+         {
+             'summary': 'Mostly cloudy throughout the day and breezy starting in the afternoon.',
+             'apparentTemperatureMax': 64.17, 'time': 1479448800, 'dewPoint': 41.4,
+             'windBearing': 251, 'cloudCover': 0.75, 'temperatureMax': 64.17,
+             'temperatureMin': 36.35, 'sunsetTime': 1479509565, 'apparentTemperatureMin':
+             25.68, 'apparentTemperatureMaxTime': 1479466800, 'precipIntensityMaxTime':
+             1479484800, 'precipIntensity': 0.0006, 'windSpeed': 14.56, 'sunriseTime':
+             1479474085, 'ozone': 267.23, 'icon': 'wind', 'precipType': 'rain', 'visibility':
+             9.69, 'precipProbability': 0.05, 'temperatureMinTime': 1479531600, 'moonPhase':
+             0.66, 'pressure': 1012.31, 'apparentTemperatureMinTime': 1479531600,
+             'temperatureMaxTime': 1479466800, 'precipIntensityMax': 0.002, 'humidity':
+             0.68
+         },
+         {
+             'summary': 'Clear throughout the day.', 'apparentTemperatureMax': 40.81,
+             'time': 1479535200, 'dewPoint': 20.29, 'pressure': 1031.24, 'cloudCover': 0.06,
+             'temperatureMax': 46.88, 'temperatureMin': 28.76, 'sunsetTime': 1479595924,
+             'apparentTemperatureMin': 17.33, 'apparentTemperatureMaxTime': 1479585600,
+             'moonPhase': 0.69, 'precipIntensity': 0, 'windSpeed': 12.87, 'sunriseTime':
+             1479560554, 'ozone': 268.54, 'icon': 'clear-day', 'windBearing': 302,
+             'visibility': 10, 'precipProbability': 0, 'temperatureMinTime': 1479556800,
+             'apparentTemperatureMinTime': 1479556800, 'temperatureMaxTime': 1479585600,
+             'precipIntensityMax': 0, 'humidity': 0.56
+         },
+         {
+             'summary': 'Partly cloudy until afternoon.', 'apparentTemperatureMax': 50.16, 'time': 1479621600, 'dewPoint':
+             20.38, 'pressure': 1027.8, 'cloudCover': 0.14, 'temperatureMax': 50.16,
+             'temperatureMin': 24.85, 'sunsetTime': 1479682286, 'apparentTemperatureMin':
+             23.23, 'apparentTemperatureMaxTime': 1479672000, 'moonPhase': 0.73,
+             'precipIntensity': 0, 'windSpeed': 4.94, 'sunriseTime': 1479647022, 'ozone':
+             250.59, 'icon': 'partly-cloudy-day', 'windBearing': 153, 'visibility': 10,
+             'precipProbability': 0, 'temperatureMinTime': 1479639600,
+             'apparentTemperatureMinTime': 1479646800, 'temperatureMaxTime': 1479672000,
+             'precipIntensityMax': 0, 'humidity': 0.54},
+         {
+             'summary': 'Mostly cloudy starting
+in the evening.', 'apparentTemperatureMax': 56.1, 'time': 1479708000,
+             'dewPoint': 29.58, 'pressure': 1020.71, 'cloudCover': 0.12, 'temperatureMax':
+             56.1, 'temperatureMin': 26.97, 'sunsetTime': 1479768649,
+             'apparentTemperatureMin': 21.35, 'apparentTemperatureMaxTime': 1479762000,
+             'moonPhase': 0.76, 'precipIntensity': 0, 'windSpeed': 6.32, 'sunriseTime':
+             1479733490, 'ozone': 241, 'icon': 'partly-cloudy-night', 'windBearing': 166,
+             'precipProbability': 0, 'temperatureMinTime': 1479729600,
+             'apparentTemperatureMinTime': 1479729600, 'temperatureMaxTime': 1479762000,
+             'precipIntensityMax': 0, 'humidity': 0.63
+         },
+         {
+             'summary': 'Light rain throughout
+the day.', 'apparentTemperatureMax': 61.77, 'time': 1479794400, 'dewPoint':
+             45.22, 'windBearing': 169, 'cloudCover': 0.97, 'temperatureMax': 61.77,
+             'temperatureMin': 39.27, 'sunsetTime': 1479855015, 'apparentTemperatureMin':
+             33.42, 'apparentTemperatureMaxTime': 1479873600, 'precipIntensityMaxTime':
+             1479870000, 'precipIntensity': 0.0137, 'windSpeed': 10.52, 'sunriseTime':
+             1479819958, 'ozone': 239.43, 'icon': 'rain', 'precipType': 'rain',
+             'precipProbability': 0.67, 'temperatureMinTime': 1479816000, 'moonPhase': 0.79,
+             'pressure': 1012.94, 'apparentTemperatureMinTime': 1479816000,
+             'temperatureMaxTime': 1479873600, 'precipIntensityMax': 0.0324, 'humidity':
+             0.85
+         },
+         {
+             'summary': 'Light rain in the morning.', 'apparentTemperatureMax':
+             60.59, 'time': 1479880800, 'dewPoint': 40.36, 'windBearing': 318, 'cloudCover':
+             0.94, 'temperatureMax': 60.59, 'temperatureMin': 38.69, 'sunsetTime':
+             1479941382, 'apparentTemperatureMin': 31.29, 'apparentTemperatureMaxTime':
+             1479880800, 'precipIntensityMaxTime': 1479891600, 'precipIntensity': 0.0104,
+             'windSpeed': 11.57, 'sunriseTime': 1479906424, 'ozone': 253.79, 'icon': 'rain',
+             'precipType': 'rain', 'precipProbability': 0.67, 'temperatureMinTime':
+             1479963600, 'moonPhase': 0.82, 'pressure': 1016.96,
+             'apparentTemperatureMinTime': 1479909600, 'temperatureMaxTime': 1479880800,
+             'precipIntensityMax': 0.0312, 'humidity': 0.83
+         },
+         {
+             'summary': 'Light rain
+overnight.', 'apparentTemperatureMax': 44.83, 'time': 1479967200, 'dewPoint':
+             30.77, 'windBearing': 97, 'cloudCover': 0.32, 'temperatureMax': 47.62,
+             'temperatureMin': 25.68, 'sunsetTime': 1480027752, 'apparentTemperatureMin':
+             19.7, 'apparentTemperatureMaxTime': 1480021200, 'precipIntensityMaxTime':
+             1479967200, 'precipIntensity': 0.001, 'windSpeed': 2.4, 'sunriseTime':
+             1479992891, 'ozone': 248.31, 'icon': 'rain', 'precipType': 'rain',
+             'precipProbability': 0.04, 'temperatureMinTime': 1479988800, 'moonPhase': 0.86,
+             'pressure': 1026.9, 'apparentTemperatureMinTime': 1479988800,
+             'temperatureMaxTime': 1480021200, 'precipIntensityMax': 0.0017, 'humidity':
+             0.77
+         }
+     ]
+ }
+ , 'timezone': 'America/Chicago', 'offset': -6
+}
