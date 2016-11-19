@@ -76,7 +76,7 @@ if __name__ == "__main__":
     tweet = ""
 
     if time[0:2] == "03":
-        currently, temperature, precipProb = getCurrentlyWeather
+        currently, temperature, precipProb = getCurrentlyWeather(weather)
         tweet = ("Hey, U! Yeah! U! Try to get some sleep! Naps are a great "
                  "way of managing all nighters if you must. Anyway, "
                  "it's {:.0f}°F. Now try 2 sleep!".format(temperature))
@@ -96,7 +96,7 @@ if __name__ == "__main__":
         weekly = getWeeklyReport(weather)
         tweet = ("Hope you are having a great day! Here's your weekly"
                  " forecast...")
-        api.updaste_tatus(tweet)
+        api.update_status(tweet)
         tweet = ("...{}".format(weekly))
         api.update_status(tweet)
 
