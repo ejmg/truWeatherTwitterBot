@@ -92,7 +92,9 @@ if __name__ == "__main__":
     elif time[0:2] == "12":
         weekly = getWeeklyReport(weather)
         tweet = ("Hope you are having a great day! Here's your weekly"
-                 " forecast: ".format(weekly))
+                 " forecast...")
+        api.update_status(tweet)
+        tweet = ("...{}".format(weekly))
         api.update_status(tweet)
 
     elif time[0:2] == "18":
@@ -102,7 +104,7 @@ if __name__ == "__main__":
                  format(
                      temperature,
                      (precipProb * 100)))
-        api.update_stat(tweet)
+        api.update_state(tweet)
 
     elif time[:2] == "21":
         tomorrow, low, high, precipProb = getNextDayWeather(weather)
