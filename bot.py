@@ -80,6 +80,7 @@ if __name__ == "__main__":
         tweet = ("Hey, U! Yeah! U! Try to get some sleep! Naps are a great "
                  "way of managing all nighters if you must. Anyway, "
                  "it's {:.0f}°F. Now try 2 sleep!".format(temperature))
+        api.update_status(tweet)
 
     elif time[0:2] == "06":
         currently, temperature, precipProb = getCurrentlyWeather(weather)
