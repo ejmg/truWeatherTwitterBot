@@ -100,7 +100,7 @@ if __name__ == "__main__":
     elif time[0:2] == "18":
         currently, temperature, precipProb = getCurrentlyWeather(weather)
         tweet = ("The current temperature is {:.0f}°F, "
-                 ", with {:.0f}% of precipitation. Have a great evening!".
+                 "with {:.0f}% of precipitation. Have a great evening!".
                  format(
                      temperature,
                      (precipProb * 100)))
