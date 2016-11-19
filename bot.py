@@ -54,9 +54,7 @@ def getWeeklyReport(weather):
     weekly = weather['daily']['summary']
     return weekly
 
-# api.update_status("In the beginning there was darkness..."
-# "with a chance of rain!")
-
+# TODO: Modularize the operations within main. Way too much stuff for a driver.
 if __name__ == "__main__":
     time = arrow.now("US/Central").format("HH:mm")
     api = setTwitterAuth()
@@ -76,10 +74,14 @@ if __name__ == "__main__":
 
     weather = weather.json()
     tweet = ""
-    report = ""  # sometimes 2 tweets will be needed & this will contain report
 
-# Tweets will be sent depending on the time of day
-    if time[0:2] == "06":
+    if time[0:2] == "03":
+        currently, temperature, precipProb = getCurrentlyWeather
+        tweet = ("Hey, U! Yeah! U! Try to get some sleep! Naps are a great "
+                 "way of managing all nighters if you must. Anyway, "
+                 "it's {:.0f}°F. Now try 2 sleep!".format(temperature))
+
+    elif time[0:2] == "06":
         currently, temperature, precipProb = getCurrentlyWeather(weather)
         tweet = ("Today's weather is set to be {} at {:.0f}°F"
                  ", with {:.0f}% of precipitation. Have a great day!".
@@ -93,7 +95,7 @@ if __name__ == "__main__":
         weekly = getWeeklyReport(weather)
         tweet = ("Hope you are having a great day! Here's your weekly"
                  " forecast...")
-        api.update_status(tweet)
+        api.updaste_tatus(tweet)
         tweet = ("...{}".format(weekly))
         api.update_status(tweet)
 
@@ -104,7 +106,7 @@ if __name__ == "__main__":
                  format(
                      temperature,
                      (precipProb * 100)))
-        api.update_status(tweet)
+        api.update_selftatus(tweet)
 
     elif time[:2] == "21":
         tomorrow, low, high, precipProb = getNextDayWeather(weather)
