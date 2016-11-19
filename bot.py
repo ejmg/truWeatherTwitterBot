@@ -107,7 +107,7 @@ if __name__ == "__main__":
                  format(
                      temperature,
                      (precipProb * 100)))
-        api.update_selftatus(tweet)
+        api.update_status(tweet)
 
     elif time[:2] == "21":
         tomorrow, low, high, precipProb = getNextDayWeather(weather)
