@@ -40,13 +40,27 @@ def setTwitterAuth():
     return api
 
 
+def getWeather():
+    try:
+        weather = requests.get(DARK_SKY_URL)
+    except requests.exceptions.Timeout:
+        api.update_status("Hmm, I can't seem to request data from the API "
+                          "right now. DM my owner to check for a bug!")
+    except requests.exceptions.TooManyRedirects:
+        api.update_status("Hmm, the url for the API seems to not work anymore."
+                          " Please DM my owner and let him know!")
+    except requests.exceptions.RequestException as e:
+        api.update_status("Yikes, DM my owner! Error: {}".
+                          format(e))
+
+
 def deleteDuplicates(api, tweet):
     """
     takes to-be tweet and deletes any exact duplicates from the last 20 on
     the bot's timeline. Added benefit of keeping timeline short for upkeep.
     """
-    last20Tweets = api.home_timeline()
-    for oldTweet in last20Tweets:
+    oldTweets = api.user_timeline("@TrumanWeather", count=36)
+    for oldTweet in oldTweets:
         if oldTweet.text == tweet:
             api.destroy_status(oldTweet.id)
 
