@@ -46,12 +46,15 @@ def getWeather():
     except requests.exceptions.Timeout:
         api.update_status("Hmm, I can't seem to request data from the API "
                           "right now. DM my owner to check for a bug!")
+        return None
     except requests.exceptions.TooManyRedirects:
         api.update_status("Hmm, the url for the API seems to not work anymore."
                           " Please DM my owner and let him know!")
     except requests.exceptions.RequestException as e:
         api.update_status("Yikes, DM my owner! Error: {}".
                           format(e))
+    finally:
+        return weather
 
 
 def deleteDuplicates(api, tweet):
@@ -109,17 +112,7 @@ if __name__ == "__main__":
     api = setTwitterAuth()
     test = False  # boolean for testing
 
-    try:
-        weather = requests.get(DARK_SKY_URL)
-    except requests.exceptions.Timeout:
-        api.update_status("Hmm, I can't seem to request data from the API "
-                          "right now. DM my owner to check for a bug!")
-    except requests.exceptions.TooManyRedirects:
-        api.update_status("Hmm, the url for the API seems to not work anymore."
-                          " Please DM my owner and let him know!")
-    except requests.exceptions.RequestException as e:
-        api.update_status("Yikes, DM my owner! Error: {}".
-                          format(e))
+    weather = getWeather()
 
     weather = weather.json()
     tweet = ""
