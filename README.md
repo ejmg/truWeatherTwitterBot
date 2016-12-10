@@ -13,7 +13,7 @@ the bot currently runs on a chron job on my raspberry pi server and is set to ch
 5. 10PM: It will give a forecast for the next day (summary, high, low)
 
 # TODO:
-1. Create method that checks timeline for repeate messages and deletes them before tweeting 
+1. ~~Create method that checks timeline for repeate messages and deletes them before tweeting~~
 2. More message variety overall, different greetings, etc
 3. Inspiration messages! Quotes, etcetera
 4. School events (this will probably be a much bigger problem, so for later when i have a lot more time)
